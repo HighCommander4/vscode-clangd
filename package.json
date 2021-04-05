@@ -334,6 +334,24 @@
               "light": "#11223300",
               "highContrast": "#11223300"
             }
+          },
+          {
+            "id": "clangd.inactiveRegions.foreground",
+            "description": "Foreground color of inactive code regions",
+            "defaults": {
+              "dark": "#646464",
+              "light": "#646464",
+              "highContrast": "#646464"
+            }
+          },
+          {
+            "id": "clangd.inactiveRegions.background",
+            "description": "Background color of inactive code regions",
+            "defaults": {
+              "dark": "#1212124C",
+              "light": "#DCDCDC4C",
+              "highContrast": "#FCFCFC4C"
+            }
           }
         ]
     }
