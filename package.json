@@ -157,6 +157,16 @@
                     "type": "boolean",
                     "default": true,
                     "description": "Warn about conflicting extensions and suggest disabling them."
+                },
+                "clangd.inactiveRegions.useOpacity": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Use opacity rather than a background highlight to identify inactive preprocessor regions."
+                },
+                "clangd.inactiveRegions.opacity": {
+                    "type": "number",
+                    "default": 0.55,
+                    "description": "Opacity of inactive regions (used only if clangd.inactiveRegions.useOpacity=true)"
                 }
             }
         },
@@ -350,6 +360,17 @@
                     "when": "clangd.ast.hasData"
                 }
             ]
-        }
+        },
+        "colors": [
+            {
+                "id": "clangd.inactiveRegions.background",
+                "description": "Background color of inactive code regions (used only if clangd.inactiveRegions.useOpacity=false)",
+                "defaults": {
+                    "dark": "#1212124C",
+                    "light": "#DCDCDC4C",
+                    "highContrast": "#FCFCFC4C"
+                }
+            }
+        ]
     }
 }
